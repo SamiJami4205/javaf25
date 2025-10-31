@@ -1,0 +1,62 @@
+body { 
+    font-family: system-ui, Arial, sans-serif; 
+    margin: 2rem;
+}
+.card { 
+    max-width: 480px; 
+    padding: 1rem 1.25rem; 
+    border: 1px solid #ddd; 
+    border-radius: 12px;
+}
+.row { 
+    display: flex; 
+    gap: .5rem; 
+    margin-bottom: 1rem;
+}
+input { 
+    flex: 1; 
+    padding: .6rem .8rem; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+}
+button { 
+    padding: .65rem 1rem; 
+    border: 0; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    background: #1f7aec; 
+    color: #fff;
+}
+button:disabled { 
+    opacity: .7; 
+    cursor: not-allowed;
+}
+#weather { 
+    min-height: 80px;
+}
+.temp { 
+    font-size: 2.25rem; 
+    line-height: 1; 
+    margin: .25rem 0;
+}
+.muted { 
+    color: #666;
+}
+.error { 
+    color: #c62828; 
+    margin-top: .25rem;
+}
+.icon-wrap { 
+    display: flex; 
+    align-items: center; 
+    gap: .5rem;
+}
+img.weather-icon { 
+    width: 60px; 
+    height: 60px; 
+    image-rendering: -webkit-optimize-contrast;
+
+}
+h1 {
+    margin-top: 0;
+}

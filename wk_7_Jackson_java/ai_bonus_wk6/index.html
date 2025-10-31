@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Random Background Color Changer</h1>
+
+    <button type="button" id="changeColorBtn" class="btn">Change Color</button>
+    <button type="button" id="copyHexBtn" class="btn" disabled>Copy HEX</button>
+
+    <div id="colorValue">
+        Current Color:
+        <span id="rgbText">rgb(255, 255, 255)</span> |
+        <span id="hexText">#FFFFFF</span>
+    </div>
+
+    <!-- Screen-reader friendly status updates -->
+    <div id="copyStatus" role="status" aria-live="polite"></div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/color.js" defer></script>
+</body>
+</html>

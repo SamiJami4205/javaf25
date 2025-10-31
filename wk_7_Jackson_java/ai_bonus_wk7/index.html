@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="gallery" aria-label="Image gallery">
+        <div class="main">
+        <!-- Default main image matches first thumbnail -->
+        <img
+            id="mainImage"
+            src="images/photo1-large.jpg"
+            alt="Sunset over mountains"
+        >
+        </div>
+
+        <ul class="thumbs" id="thumbList">
+        <!-- Each thumbnail button stores the large image + alt text in data- attributes -->
+        <li>
+            <button type="button" class="thumb" aria-current="true"
+                    data-large="images/photo1-large.jpg"
+                    data-alt="Sunset over mountains">
+            <img src="images/photo1-thumb.jpg" alt="Thumbnail: Sunset over mountains" loading="lazy">
+            <span class="sr-only">Select Sunset over mountains</span>
+            </button>
+        </li>
+        <li>
+            <button type="button" class="thumb"
+                    data-large="images/photo2-large.jpg"
+                    data-alt="Forest trail with tall pines">
+            <img src="images/photo2-thumb.jpg" alt="Thumbnail: Forest trail with tall pines" loading="lazy">
+            <span class="sr-only">Select Forest trail with tall pines</span>
+            </button>
+        </li>
+        <li>
+            <button type="button" class="thumb"
+                    data-large="images/photo3-large.jpg"
+                    data-alt="City skyline at night">
+            <img src="images/photo3-thumb.jpg" alt="Thumbnail: City skyline at night" loading="lazy">
+            <span class="sr-only">Select City skyline at night</span>
+            </button>
+        </li>
+        <li>
+            <button type="button" class="thumb"
+                    data-large="images/photo4-large.jpg"
+                    data-alt="Ocean waves on a rocky coast">
+            <img src="images/photo4-thumb.jpg" alt="Thumbnail: Ocean waves on a rocky coast" loading="lazy">
+            <span class="sr-only">Select Ocean waves on a rocky coast</span>
+            </button>
+        </li>
+        </ul>
+    </div>
+
+    <!-- Link JS (defer waits for HTML to parse first) -->
+    <script src="js/gallery.js" defer></script>
+</body>
+</html>

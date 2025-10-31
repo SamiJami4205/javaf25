@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Toggle Example</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 100px;
+        background-color: #f4f4f9;
+        }
+
+        #toggleButton {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        }
+
+        #toggleButton:hover {
+        background-color: #0056b3;
+        }
+
+        #message {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        color: #333;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>Simple jQuery Toggle Example</h1>
+
+    <button type="button" id="toggleButton">Hide / Show Text</button>
+
+    <p id="message">This paragraph will hide and show when you click the button.</p>
+
+    <!-- Include jQuery library (CDN) -->
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Link to your external script -->
+    <script src="js/toggle.js" defer></script>
+</body>
+</html>
