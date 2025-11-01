@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>API Quiz Challenge</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+        <h1>API Quiz Game</h1>
+        </header>
+
+        <main class="container">
+        <section class="score-row">
+            <div id="score">Score: <span id="score-value">0</span></div>
+            <div id="question-count">Question: <span id="qnum">0</span></div>
+        </section>
+
+        <section id="quiz">
+            <div id="question" class="question">Loading question...</div>
+
+            <div id="answers" class="answers"></div>
+
+            <div class="controls">
+            <button type="button" id="submit" disabled>Submit Answer</button>
+            <button type="button" id="next" class="secondary" disabled>Next Question</button>
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+        </section>
+
+        <footer class="notes">
+            <p>Questions from <a href="https://opentdb.com/" target="_blank" rel="noopener">Open Trivia DB</a>.</p>
+        </footer>
+        </main>
+
+        <script src="script.js"></script>
+</body>
+</html>

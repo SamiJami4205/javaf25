@@ -1,0 +1,97 @@
+/* Simple styles consistent with chapter examples */
+body{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f6f8fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background:#2b8db6;
+    color:#fff;
+    padding:1rem
+}
+header h1{
+    margin:0;
+    font-size:1.3rem
+}
+.container{
+    max-width:700px;
+    margin:2rem auto;
+    padding:1rem
+}
+.score-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:1rem
+}
+#quiz{
+    background:#fff;
+    padding:1.25rem;
+    border-radius:6px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.08)
+}
+.question{
+    font-size:1.1rem;
+    margin-bottom:1rem
+}
+.answers{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem
+}
+.answer{
+    padding:0.6rem 0.8rem;
+    border-radius:4px;
+    border:1px solid #ddd;
+    cursor:pointer;
+    background:#fafafa
+}
+.answer:hover{
+    background:#f0f8ff
+}
+.answer.selected{
+    border-color:#2b8db6;
+    background:#e7f3fb
+}
+.answer.correct{
+    background:#dff0d8;
+    border-color:#3c763d
+}
+.answer.wrong{
+    background:#f2dede;
+    border-color:#a94442
+}
+.controls{
+    margin-top:1rem;
+    display:flex;
+    gap:0.5rem
+}
+button{
+    padding:0.5rem 0.9rem;
+    border-radius:4px;
+    border:1px solid #2b8db6;
+    background:#2b8db6;
+    color:#fff;
+    cursor:pointer
+}
+button.secondary{
+    background:#6c757d;
+    border-color:#6c757d
+}
+button[disabled]{
+    opacity:0.6;
+    cursor:default
+}
+.feedback{
+    margin-top:0.75rem;
+    font-weight:600
+}
+.notes{
+    margin-top:1rem;
+    font-size:0.9rem;
+    color:#555
+}
+a{
+    color:#2b8db6
+}

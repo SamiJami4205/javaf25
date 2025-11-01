@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dog Viewer</title>
+
+    <style>
+        /* Simple, readable styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+            width: 320px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            margin-top: 0;
+        }
+
+        #dogImage {
+            width: 100%;
+            max-height: 250px;
+            object-fit: contain;
+            border-radius: 0.5rem;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+        }
+
+        #status {
+            font-size: 0.9rem;
+            color: #555;
+            min-height: 1.2em; /* reserves space so layout doesn't jump */
+            margin: 0.5rem 0 1rem;
+        }
+
+        #newDogBtn {
+            cursor: pointer;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+        }
+
+        #newDogBtn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="card">
+        <h1>Random Dog Viewer 🐾</h1>
+
+        <!-- Dog image goes here -->
+        <img id="dogImage" src="" alt="Random dog will appear here">
+
+        <!-- Status / message text -->
+        <p id="status"></p>
+
+        <!-- Button to get a new dog -->
+        <button id="newDogBtn">Show me a dog</button>
+    </main>
+
+    <!-- Link to our JavaScript file -->
+    <script src="js/dog.js"></script>
+</body>
+</html>
