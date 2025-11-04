@@ -1,0 +1,26 @@
+{
+    "version": "1.0",
+    "defaultUnits": "metric",
+    "categories": {
+        "underweight": {
+            "min": 0,
+            "max": 18.5,
+            "risk": "high"
+        },
+        "normal": {
+            "min": 18.5,
+            "max": 24.9,
+            "risk": "low"
+        },
+        "overweight": {
+            "min": 25,
+            "max": 29.9,
+            "risk": "moderate"
+        },
+        "obese": {
+            "min": 30,
+            "max": 100,
+            "risk": "high"
+        }
+    }
+}

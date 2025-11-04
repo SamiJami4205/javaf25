@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>BMI Calculator - Health Check</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>BMI Health Calculator</h1>
+            <nav>
+                <ul>
+                    <li><a href="#calculator" class="active">Calculator</a></li>
+                    <li><a href="#history">History</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section id="welcome">
+                <h2>Welcome to your Health Check</h2>
+                <form id="nameForm">
+                    <label for="userName">Enter your name:</label>
+                    <input type="text" id="userName" required>
+                    <button type="submit">Start</button>
+                </form>
+            </section>
+
+            <section id="calculator" class="hidden">
+                <div class="time-display">
+                    <span id="currentTime"></span>
+                    <span id="currentDate"></span>
+                </div>
+                <h2>Calculate Your BMI</h2>
+                <p>Welcome, <span id="userNameDisplay"></span>!</p>
+                <form id="bmiForm">
+                    <div class="form-group">
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" id="weight" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Height (cm):</label>
+                        <input type="number" id="height" step="0.1" required>
+                    </div>
+                    <button type="submit">Calculate BMI</button>
+                </form>
+
+                <div id="results" class="hidden">
+                    <h3>Your Results</h3>
+                    <div class="result-content">
+                        <div class="bmi-value">
+                            <span>Your BMI:</span>
+                            <strong id="bmiValue">0</strong>
+                        </div>
+                        <div class="bmi-category">
+                            <span>Category:</span>
+                            <strong id="bmiCategory"></strong>
+                        </div>
+                    </div>
+                    <div class="result-image">
+                        <img id="resultImage" src="" alt="BMI Category Representation">
+                    </div>
+                    <div class="result-advice" id="healthAdvice"></div>
+                </div>
+            </section>
+
+            <section id="history" class="hidden">
+                <h2>Your BMI History</h2>
+                <div id="historyList"></div>
+            </section>
+        </main>
+
+        <script src="js/bmi.js"></script>
+    </body>
+</html>
