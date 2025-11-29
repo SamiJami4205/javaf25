@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      background: #f8f9fa;
+    }
+    h1 {
+      text-align: center;
+    }
+    .faq-item {
+      background: #fff;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .question {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .answer {
+      display: none;
+      margin-top: 10px;
+      color: #333;
+    }
+    .faq-item.active .answer {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>FAQ</h1>
+
+  <div class="faq-item">
+    <div class="question">What is this app about?</div>
+    <div class="answer">It’s a simple FAQ panel built with HTML, CSS, and JavaScript.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">How does it work?</div>
+    <div class="answer">Click on a question to reveal or hide its answer.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="question">Can I add more questions?</div>
+    <div class="answer">Yes! Just duplicate one of the FAQ items in the HTML.</div>
+  </div>
+
+  <script src="js/faq.js"></script>
+</body>
+</html>

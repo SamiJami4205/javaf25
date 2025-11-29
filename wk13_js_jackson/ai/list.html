@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Searchable List</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    body { margin: 0; padding: 40px 20px; display: grid; place-items: start center; background: #f7f7f8; }
+    .card { width: min(720px, 92vw); background: #fff; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.08); padding: 24px; }
+    h1 { margin: 0 0 16px; font-size: 1.3rem; }
+    .search-row { display: flex; gap: 8px; align-items: center; margin-bottom: 16px; }
+    input[type="search"] { flex: 1; padding: 10px 12px; border: 1px solid #ddd; border-radius: 10px; font-size: 1rem; }
+    button { padding: 10px 12px; border: 1px solid #ddd; border-radius: 10px; background: #fafafa; cursor: pointer; }
+    ul { list-style: none; padding: 0; margin: 8px 0 0; }
+    li { padding: 10px 12px; border: 1px solid #eee; border-radius: 10px; margin-bottom: 8px; }
+    .muted { color: #777; font-size: .95rem; padding: 8px 0; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Searchable List</h1>
+
+    <div class="search-row">
+      <input id="search" type="search" placeholder="Type to filter… (try: rose, butterfly, lettering)" autocomplete="off" />
+      <button id="clearBtn" type="button" title="Clear search">Clear</button>
+    </div>
+
+    <p id="emptyState" class="muted" style="display:none;">No matches found.</p>
+
+    <ul id="items"> 
+        <li>its funny that chatgpt used my ink by sami content to fill this in</li>
+      <li>Fine-line rose tattoo</li>
+      <li>Butterfly outline — lower back</li>
+      <li>Memorial handwriting with birds</li>
+      <li>Ghost &amp; Skeleton yin-yang</li>
+      <li>Minimalist floral ankle</li>
+      <li>Lettering: “Everything happens for a reason”</li>
+      <li>Patchwork sleeve additions (bats, dice, web)</li>
+      <li>Lotus cover-up (wrist)</li>
+      <li>Web design audit — tattoo shop</li>
+      <li>Instagram content calendar</li>
+    </ul>
+  </div>
+
+  <script src="js/list.js"></script>
+</body>
+</html>
